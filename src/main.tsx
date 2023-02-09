@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import {Login, Register, Single, Write, Layout} from '../components/index';
 import ErrorPage from '../route/error/Errorpage';
+import Home from './App';
 
 const router = createBrowserRouter([
   {

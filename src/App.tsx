@@ -1,9 +1,8 @@
-import { useState } from 'react'
+import React from 'react'
 
-function App() {
-
+const App = () => {
   return (
-    <h1>Hello Homepage</h1>
+    <h1 className='underline'>This is homepage</h1>
   )
 }
 
