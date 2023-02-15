@@ -5,11 +5,11 @@ import Navbar from './Navbar'
 
 const Layout = () => {
   return (
-    <>
+    <div className='h-screen bg-gradient-to-r from-slate-50 to-white'>
         <Navbar/>
         <Outlet/>
         <Footer/>
-    </>
+    </div>
   )
 }
 
