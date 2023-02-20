@@ -6,7 +6,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import {Login, Register, Single, Write, Layout} from '../components/index';
+import {Login, Register, Post, Write, Layout} from '../components/index';
 import ErrorPage from '../route/error/Errorpage';
 import Home from './App';
 
@@ -14,21 +14,21 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <Layout/>,
+    errorElement: <ErrorPage/>,
     children: [
       {
         path: '/',
         element: <App/>
       },
       {
-        path: '/post/:id',
-        element: <Single/>
+        path: '/posts/:id',
+        element: <Post/>
       },
       {
         path: '/write',
         element: <Write/>
       }
     ],
-    errorElement: <ErrorPage/>
   },
   {
     path: '/register',
